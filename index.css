@@ -174,9 +174,16 @@ body{
   color: fuchsia;
   margin: 15px;
 }
+.carousel .carousel-inner .carousel-item .carousel-caption button:hover{
+  background-color: darkviolet;
+  color: white;
+}
 .carousel .carousel-inner .carousel-item .carousel-caption #btn2{
   background-color: deeppink;
   color: white;
+}
+.carousel .carousel-inner .carousel-item .carousel-caption #btn2:hover{
+  background-color: darkviolet;
 }
 /*  */
 .service .card-type{
@@ -203,6 +210,8 @@ body{
 .service .card-type .box-img{
   transition: all 1s;
   overflow: hidden;
+  margin-top: 10px;
+  border-radius: 10px;
 }
 .service .card-type .box-img img{
   width: 100%;
@@ -221,10 +230,273 @@ body{
   color: white;
   border: none;
 }
+.service .btn{
+  width: 180px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: deeppink;
+  color: white;
+  border: none;
+}
+.service .btn:hover{
+  background-color: darkviolet;
+}
+/*  */
+
+.about .con-img{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.about .con-img .image{
+  width: 90%;
+  height: 90%;
+  position: relative;
+}
+.about .con-img .image2{
+  position: absolute;
+  height: 35%;
+  bottom: 0;
+  right: 0;
+  border: 5px solid white;
+  border-radius: 10px;
+}
+.about .con-img button{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  bottom: 50%;
+  right: 50%;
+  border: none;
+  color: white;
+  background-color: deeppink;
+}
+.about .con-img button:hover{
+  background-color: darkviolet;
+}
+.about .text h5{
+  font-size: 1.5rem;
+  color: deeppink;
+}
+.about .text h1{
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+.about .text p{
+  font-size: 17px;
+  margin-top: 5px;
+}
+.about .text .d-flex .w-25{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .text .d-flex .w-25 i{
+  font-size: 3rem;
+  color: deeppink;
+}
+.about .text button{
+  width: 180px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: deeppink;
+  color: white;
+  border: none;
+}
+.about .text button:hover{
+  background-color: darkviolet;
+  color: white;
+}
+/*  */
+.open .form{
+  border-radius: 10px;
+} 
+.open .form h5{
+  font-size: 2rem;
+  color: deeppink;
+}
+.open .form h1{
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.open .form input{
+  height: 50px;
+  background-color: rgba(162, 162, 162, 0.1);
+  margin-top: 15px;
+  border: 2px solid white;
+  background: none;
+  color: white;
+}
+.open .form input::placeholder{
+  color: white;
+}
+.open .form select::placeholder{
+  color: white;
+}
+.open .form textarea::placeholder{
+  color: white;
+}
+.open .form select{
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-top: 15px;
+  border: 2px solid white;
+  color: white;
+}
+.open .form select option{
+  color: black;
+}
+.open .form textarea{
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-top: 15px;
+  height: 20vh;
+  border: 2px solid white;color: white;
+}
+
+.open .form button{
+  height: 50px;
+  border-radius: 20px;
+  background-color: deeppink;
+  color: white;
+  border: none;
+}
+
+.open .form button:hover{
+  background-color: darkviolet;
+}
+.open .hour{
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+.open .hour h1{
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: deeppink;
+}
+.open .hour p{
+  color: white;
+  font-size: 20px;
+  margin-top:4px;
+  font-weight: 650;
+}
+.open .card-num{
+  background-color: rgb(0, 0, 0, .3);
+  border-radius: 0 25% 0 25%;
+  
+}
+.open .card-num .box-text{
+  background-color: rgb(255, 220, 225);
+  border-radius: 15px;
+}
+.open .card-num .box-text i{
+  font-size: 4rem;
+  color: deeppink;
+}
+
+.open .card-num .box-text p{
+  font-size: 24px;
+  margin-top: 13px;
+  color: deeppink;
+  margin-top: 10px;
+}
+.open .card-num .edge{
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  background-color: rgb(255, 220, 225);
+  height: 40px;
+  width: 60px;
+}
+.open .card-num .counter-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  background-color: deeppink;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  color: white;
+}
+.open .card-num .counter-section .counter{
+  font-size: 26px;
+  font-weight: 700;
+}
+
+/*  */
+.gallery .btn-tab{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery .btn-tab button{
+  margin: 20px;
+  width: 150px;
+  height: 50px;
+  border-radius: 25px;
+  border: 2px solid deeppink;
+  color: black;
+}
+.gallery .tab-content .tab-pane .con-image{
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: white;
+  object-fit: fill;
+  position: relative;
+}
+.gallery .tab-content .tab-pane .con-image img{
+  width: 100%;
+  height: 350px;
+  cursor: pointer;
+  transition: 1s all;
+}
+.gallery .tab-content .tab-pane .con-image:hover img{
+  transform: scale(1.2);
+  opacity: .5;
+  
+}
+
+.gallery .tab-content .tab-pane .con-image .overlay{
+  position: absolute;
+  transition: opacity 0.5s;
+  top: 10%; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  opacity: 0; 
+}
+
+.gallery .tab-content .tab-pane .con-image .overlay h5{
+  font-size: 1.25rem;
+  color: deeppink;
+}
+.gallery .tab-content .tab-pane .con-image .overlay button{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: deeppink;
+  color: white;
+  border: none;
+  margin-top: 100px;
+  
+}
+.gallery .tab-content .tab-pane .con-image .overlay button:hover{
+  background-color: darkviolet;
+}
+.gallery .tab-content .tab-pane .con-image:hover .overlay { 
+  opacity: 1; 
+}
 /*  */
 .offcanvas .offcanvas-body .input-group{
   height: 70px;
   border: solid fuchsia;
+}
+/* modal */
+
+
+.modal i{
+  color: white;
+  font-size: 2rem;
 }
 /*  */
 @media screen and (max-width: 992px){
