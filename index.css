@@ -38,6 +38,12 @@ body{
 
 /*  */
 .main-header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fff;
+  transition: top 0.3s;
   background-color: whitesmoke;
 }
 .main-header .navbar-brand h1{
@@ -46,7 +52,7 @@ body{
   font-weight: 700;
 }
 .main-header .collapse ul a{
-  font-size: 17px;
+  font-size: 20px;
   color: blueviolet;
   font-weight: 650;
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -89,6 +95,7 @@ body{
   color: blueviolet;
   text-decoration: none;
   margin-top: 10px;
+  font-size: 17px;
 }
 .main-header .collapse ul li .hover-drop li a:hover{
   color: fuchsia;
@@ -139,7 +146,7 @@ body{
 
 /*carousel  */
 .carousel .carousel-indicators button{
-  height: 20px;
+  height: 10px;
   width: 40px;
   margin: 10px;
   border-radius: 17px;
@@ -161,10 +168,11 @@ body{
 .carousel .carousel-inner .carousel-item .carousel-caption h1{
   font-size: 4rem;
   font-weight: 700;
+  color: black;
 }
 .carousel .carousel-inner .carousel-item .carousel-caption p{
   font-size: 1.5rem;
-  
+  color: grey;
 }
 .carousel .carousel-inner .carousel-item .carousel-caption button{
   width: 170px;
@@ -186,6 +194,13 @@ body{
   background-color: darkviolet;
 }
 /*  */
+.service h5{
+  font-size: 1.75rem;
+  color: deeppink;
+}
+.service h1{
+  font-size: 4rem;
+}
 .service .card-type{
   background-color: aliceblue;
   border-radius: 10px;
@@ -384,7 +399,7 @@ body{
 }
 .open .card-num{
   background-color: rgb(0, 0, 0, .3);
-  border-radius: 0 25% 0 25%;
+  border-radius: 0 15% 0 15%;
   
 }
 .open .card-num .box-text{
@@ -392,12 +407,12 @@ body{
   border-radius: 15px;
 }
 .open .card-num .box-text i{
-  font-size: 4rem;
+  font-size: 3rem;
   color: deeppink;
 }
 
 .open .card-num .box-text p{
-  font-size: 24px;
+  font-size: 17px;
   margin-top: 13px;
   color: deeppink;
   margin-top: 10px;
@@ -425,6 +440,13 @@ body{
 }
 
 /*  */
+.gallery h5{
+  font-size: 2.5rem;
+  color: deeppink;
+}
+.gallery h1{
+  font-size: 4rem;
+}
 .gallery .btn-tab{
   display: flex;
   justify-content: center;
@@ -487,16 +509,325 @@ body{
   opacity: 1; 
 }
 /*  */
+.card-price .carousel .run-btn button{
+  border: none;
+  font-size: 1.5rem;
+  border-radius: 20px;
+  width: 120px;
+  height: 35px;
+  margin: 15px;
+  background-color: darkviolet;
+  color: white;
+} 
+.card-price .carousel .run-btn button:hover{
+  background-color: deeppink;
+}
+.card-price .carousel .carousel-inner .box-price{
+  background-color: rgba(200, 200, 200, 0.6);
+  border-radius: 15px;
+}
+.card-price .carousel .carousel-inner .box-price .box-price-head{
+  border-top-left-radius: 15px;
+  border-bottom: 3px solid deeppink;
+}
+.card-price .carousel .carousel-inner .box-price .box-price-head h3{
+  font-size: 2rem;
+  color: deeppink;
+}
+
+.card-price .carousel .carousel-inner .box-price .box-price-head h5{
+  color: darkviolet;
+  font-size: 1rem;
+}
+.card-price .carousel .carousel-inner .box-price .box-price-body i{
+  color: deeppink;
+  font-size: 1.25rem;
+}
+.card-price .carousel .carousel-inner .box-price .box-price-body p{
+  color: white;
+  font-size: 1.15rem;
+  margin-top: 10px;
+  text-transform: capitalize;
+}
+
+.card-price .carousel .carousel-inner .box-price .box-price-body button{
+ width: 140px;
+ height: 45px;
+ margin-top: 5px;
+ border-radius: 25px;
+ border: none;
+ background-color: deeppink;
+ color: white;
+}
+
+.card-price .carousel .carousel-inner .box-price .box-price-body button:hover{
+  background-color: darkviolet;
+}
+
+/*  */
+.card-people h4{
+  font-size: 2.5rem;
+  color: deeppink;
+}
+.card-people h1{
+  font-size: 4rem;
+}
+.card-people .box-people{
+  background-color: rgba(200, 200, 200, 0.5);
+  border-radius: 15px;
+  position: relative;
+}
+
+.card-people .box-people img{
+  width: 100%;
+  height: 80%;
+}
+.card-people .box-people img:hover{
+  opacity: .7;
+  background-color: rgba(200, 200, 200, 0.7);
+}
+
+.card-people .box-people:hover .box-people-footer{
+  background-color: darkviolet;
+}
+.card-people .box-people .box-people-footer{
+  height: 20%;
+  color: white;
+  background-color: deeppink;
+  padding: 15px;
+}
+.card-people .box-people .box-people-footer h5{
+  font-size: 1.5rem;
+}
+.card-people .box-people .overlay-hover { 
+  position: absolute; 
+  top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(-20px);
+  
+}
+.card-people .box-people:hover .overlay-hover{
+  opacity: 1;
+  transform: translateY(0);
+}
+.overlay-hover button { 
+  background-color: white;
+  border: none; 
+  color: deeppink; 
+  padding: 10px; 
+  border-radius: 50%; 
+  cursor: pointer; 
+  width: 40px;
+  height: 40px;
+}
+.overlay-hover button:hover{
+  color: white;
+  background-color: darkviolet;
+}
+
+/*  */
+.testimonial{
+  padding: 50px;
+}
+.testimonial h5{
+  font-size: 2.5rem;
+  color: deeppink;
+  
+}
+.testimonial h1{
+  color: white;
+  font-size: 4rem;
+  font-weight: 700;
+}
+.testimonial .run-btn button{
+  width: 130px;
+  height: 45px;
+  color: white;
+  border: none;
+  background-color: deeppink;
+  border-radius: 20px;
+  margin: 15px;
+}
+
+.testimonial .run-btn button:hover{
+  background-color: darkviolet;
+}
+.testimonial .carousel-inner .box-client{
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  color: white;
+}
+
+.testimonial .carousel-inner .box-client h5{
+  font-size: 1.25rem;
+  color: deeppink;
+  margin-top: 10px;
+}
+.testimonial .carousel-inner .box-client .client img{
+  width: 100%;
+  height: 110px;
+  border-radius: 50%;
+  border: 3px solid white;
+  
+  
+}
+
+.testimonial .carousel-inner .box-client p{
+  font-size: 1.15rem;
+}
+
+.testimonial .carousel-inner .box-client .comment i{
+  color: deeppink;
+}
+.testimonial .carousel-inner .box-client .comment .text-end i{
+  font-size: 3rem;
+  color: darkviolet;
+}
+
+.testimonial .carousel-inner .box-client .comment p{
+  margin-top: 10px;
+}
+
+/*  */
+.contact .box-contact{
+  border-radius: 15px;
+  border: 3.5px solid deeppink;
+}
+.contact .box-contact i{
+  font-size: 2.5rem;
+  color: deeppink;
+}
+.contact .box-contact h5{
+  font-size: 2rem;
+}
+
+/*  */
+.map{
+  background-color: deeppink;
+  width: 100%;
+  height: 60vh;
+  border-radius: 15px;
+}
+.map iframe{
+  height: 80%;
+}
+.map .map-footer{
+  height: 20%;
+  padding: 20px;
+}
+.map .map-footer h5{
+  font-size: 1.5rem;
+  color: white;
+}
+.map .map-footer .grp-btn button{
+  margin: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background-color: white;
+  color: deeppink;
+}
+
+.map .map-footer .grp-btn button:hover{
+  background-color: darkviolet;
+}
+/*  */
+.footer{
+  color: white;
+}
+.footer .grp-sign input{
+  background-color: white;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border: none;
+  padding: 8px;
+  border-radius: 15px;
+}
+.footer .grp-sign input::placeholder{
+  color: black;
+}
+.footer .grp-sign button{
+  position: absolute;
+  
+  width: 100px;
+  height: 50px;
+  border: none;
+  border-radius: 15px;
+  background-color: deeppink;
+  color: white;
+  left: 405px;
+}
+.footer .grp-sign button:hover{
+  background-color: darkviolet;
+}
+.footer h5{
+  font-size: 1.75rem;
+  margin-bottom: 30px;
+}
+.footer p{
+  font-size: 18px;
+  margin-top: 10px;
+}
+.footer ul li{
+  list-style: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-left: -20px;
+  row-gap: 20px;
+}
+.footer ul li a{
+  text-decoration: none;
+  color: white;
+}
+.footer ul li a:hover{
+  color: deeppink;
+  transform: translateX(10px);
+}
+
+.footer .grp-btn button{
+  margin: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background-color: white;
+  color: deeppink;
+}
+.grp-btn button:hover{
+  background-color: darkviolet;
+}
+/*  */
 .offcanvas .offcanvas-body .input-group{
   height: 70px;
   border: solid fuchsia;
 }
 /* modal */
-
-
 .modal i{
   color: white;
   font-size: 2rem;
+}
+.btn-click{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: deeppink;
+  color: white;
+  right: 0;
+  bottom: 5px;
+  border: none;
+
+}
+.btn-click:hover{
+  background-color: darkviolet;
 }
 /*  */
 @media screen and (max-width: 992px){
@@ -518,5 +849,10 @@ body{
   .carousel .carousel-inner .carousel-item .carousel-caption button{
     width: 140px;
     height: 45px;
+  }
+  .footer .grp-sign button{
+    position: absolute;
+    left: 305px;
+    
   }
 }

@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <title>Sparlex</title>
 </head>
-<body class="w-100 h-auto">
+<body class="w-100 h-auto" style="position: relative;">
   <header class=" w-100 h-auto">
     <div class="top-header w-100 h-auto">
       <div class="container d-flex p-2">
@@ -38,7 +38,7 @@
         </div>
       </div>
     </div>
-    <div class="main-header w-100 h-auto">
+    <div id="mainHeader" class="main-header w-100 h-auto">
       <div class="container">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
           <div class="container">
@@ -53,26 +53,26 @@
                   <a class="nav-link" style="color: fuchsia;" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link" href="about.html">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Services</a>
+                  <a class="nav-link" href="service.html">Services</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Price</a>
+                  <a class="nav-link" href="price.html">Price</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Pages &#9662;</a>
                   <ul class="hover-drop">
-                    <li><a class="dropdown-item" href="#">Team</a></li>
-                    <li><a class="dropdown-item" href="#">Testimonial</a></li>
-                    <li><a class="dropdown-item" href="#">Gallery</a></li>
-                    <li><a class="dropdown-item" href="#">Appointment</a></li>
-                    <li><a class="dropdown-item" href="#">404 page</a></li>
+                    <li><a class="dropdown-item" href="team.html">Team</a></li>
+                    <li><a class="dropdown-item" href="test.html">Testimonial</a></li>
+                    <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+                    <li><a class="dropdown-item" href="appointment.html">Appointment</a></li>
+                    <li><a class="dropdown-item" href="error.html">404 page</a></li>
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact Us</a>
+                  <a class="nav-link" href="contact.html">Contact Us</a>
                 </li>
               </ul>
             </div>
@@ -146,7 +146,7 @@
   </div>
 
   <!--  -->
-  <div class="service w-100 h-auto container mt-5">
+  <div class="service w-100 h-auto container" style="margin-top: 10%;">
     <center>
       <h5>OUR SERVICE</h5>
       <h1>Spa & Beauty Services</h1>
@@ -261,7 +261,7 @@
   </div>
 
   <!--  -->
-  <div class="about container w-100 h-auto mt-5">
+  <div class="about container w-100 h-auto" style="margin-top: 10%;">
     <div class="row">
       <div class="col-lg-5 col-md-12">
         <div class="con-img">
@@ -302,7 +302,7 @@
   </div>
 
   <!--  -->
-  <div class="check mt-5 w-100 h-auto" style="background-image: url(https://elementsmassage.com/files/shared/Depositphotos_34400147_s-2019.jpg);">
+  <div class="check w-100 h-auto" style="background-image: url(https://elementsmassage.com/files/shared/Depositphotos_34400147_s-2019.jpg);margin-top: 8%;">
     <div class="open container p-5">
       <div class="row d-flex">
         <div class="col-lg-6 col-md-12 mt-3">
@@ -372,7 +372,7 @@
           </div>
         </div>
       </div>
-      <div class="row mt-4">
+      <div class="row" style="margin-top: 8%;">
         <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
           <div class="card-num p-5">
             <div class="box-text p-3">
@@ -447,7 +447,7 @@
 
 
   <!--  -->
-  <div class="gallery container w-100 h-auto mt-5">
+  <div class="gallery container w-100 h-auto" style="margin-top: 10%;">
     <center>
       <h5>OUR GALLERY</h5>
       <h1>Let's See Your Gallery</h1>
@@ -727,7 +727,7 @@
         </div>
         </div>
       </div>
-    </div>
+    
   </div>
 
   <!-- Modal pic -->
@@ -859,11 +859,544 @@
   </div>
 
 
+  <!-- card price -->
+  <div class="card-price w-100 h-auto p-5" style="background-image: url(https://luxspalafayette.net/files/2020/04/towels.jpg?w=1600&a=t);margin-top: 10%;">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div class="run-btn d-flex justify-content-end">
+        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev"><i class="fa-solid fa-arrow-left"></i></button>
+        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+      <div class="carousel-inner container">
+        <div class="carousel-item active" data-bs-interval="4000">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12 mt-5">
+              <div class="box-price">
+                <div class="box-price-head d-flex bg-light p-4">
+                  <h3>$199/Mo</h3>
+                  <h5 class="mx-3">MOST PLAN</h5>
+                </div>
+                
+                <div class="box-price-body p-4">
+                  <p><i class="fa fa-check"></i>&#160; full body massage</p>
+                  <p><i class="fa fa-check"></i>&#160; full body massage</p>
+                  <p><i class="fa fa-check"></i>&#160; full body massage</p>
+                  <p><i class="fa fa-check"></i>&#160; full body massage</p>
+                  <p><i class="fa fa-check"></i>&#160; full body massage</p>
+                  <button>Order Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 mt-5">
+              <div class="box-price">
+                <div class="box-price-head d-flex bg-light p-4">
+                  <h3>$49/Mo</h3>
+                  <h5 class="mx-3">BASIC PLAN</h5>
+                </div>
+                
+                <div class="box-price-body p-4">
+                  <p><i class="fa fa-check"></i>&#160; full body massage</p>
+                  <p><i class="fa fa-check"></i>&#160; full body massage</p>
+                  <p><i class="fa fa-check"></i>&#160; full body massage</p>
+                  <p><i class="fa fa-check"></i>&#160; full body massage</p>
+                  <p><i class="fa fa-check"></i>&#160; full body massage</p>
+                  <button>Order Now</button>
+                </div>
+                
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 mt-5">
+              <div class="box-price">
+                <div class="box-price-head d-flex bg-light p-4">
+                  <h3>$99/Mo</h3>
+                  <h5 class="mx-3">FAMILY PLAN</h5>
+                </div>
+                
+                <div class="box-price-body p-4">
+                  <p><i class="fa fa-check"></i>&#160; full body massage</p>
+                  <p><i class="fa fa-check"></i>&#160; full body massage</p>
+                  <p><i class="fa fa-check"></i>&#160; full body massage</p>
+                  <p><i class="fa fa-check"></i>&#160; full body massage</p>
+                  <p><i class="fa fa-check"></i>&#160; full body massage</p>
+                  <button>Order Now</button>
+                </div>
+                
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 mt-5">
+              <div class="box-price">
+                <div class="box-price-head d-flex bg-light p-4">
+                  <h3>$299/Mo</h3>
+                  <h5 class="mx-3">VIP PLAN</h5>
+                </div>
+                
+                <div class="box-price-body p-4">
+                  <p><i class="fa fa-check"></i>&#160; full body massage</p>
+                  <p><i class="fa fa-check"></i>&#160; full body massage</p>
+                  <p><i class="fa fa-check"></i>&#160; full body massage</p>
+                  <p><i class="fa fa-check"></i>&#160; full body massage</p>
+                  <p><i class="fa fa-check"></i>&#160; full body massage</p>
+                  <button>Order Now</button>
+                </div>
+                
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12 mt-5">
+              <div class="box-price">
+                <div class="box-price-head d-flex bg-light p-4">
+                  <h3>$99/Mo</h3>
+                  <h5 class="mx-3">FAMILY PLAN</h5>
+                </div>
+                
+                <div class="box-price-body p-4">
+                  <p><i class="fa fa-check"></i>&#160; full body massage</p>
+                  <p><i class="fa fa-check"></i>&#160; full body massage</p>
+                  <p><i class="fa fa-check"></i>&#160; full body massage</p>
+                  <p><i class="fa fa-check"></i>&#160; full body massage</p>
+                  <p><i class="fa fa-check"></i>&#160; full body massage</p>
+                  <button>Order Now</button>
+                </div>
+                
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 mt-5">
+              <div class="box-price">
+                <div class="box-price-head d-flex bg-light p-4">
+                  <h3>$299/Mo</h3>
+                  <h5 class="mx-3">VIP PLAN</h5>
+                </div>
+                
+                <div class="box-price-body p-4">
+                  <p><i class="fa fa-check"></i>&#160; full body massage</p>
+                  <p><i class="fa fa-check"></i>&#160; full body massage</p>
+                  <p><i class="fa fa-check"></i>&#160; full body massage</p>
+                  <p><i class="fa fa-check"></i>&#160; full body massage</p>
+                  <p><i class="fa fa-check"></i>&#160; full body massage</p>
+                  <button>Order Now</button>
+                </div>
+                
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 mt-5">
+              <div class="box-price">
+                <div class="box-price-head d-flex bg-light p-4">
+                  <h3>$199/Mo</h3>
+                  <h5 class="mx-3">MOST PLAN</h5>
+                </div>
+                
+                <div class="box-price-body p-4">
+                  <p><i class="fa fa-check"></i>&#160; full body massage</p>
+                  <p><i class="fa fa-check"></i>&#160; full body massage</p>
+                  <p><i class="fa fa-check"></i>&#160; full body massage</p>
+                  <p><i class="fa fa-check"></i>&#160; full body massage</p>
+                  <p><i class="fa fa-check"></i>&#160; full body massage</p>
+                  <button>Order Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 mt-5">
+              <div class="box-price">
+                <div class="box-price-head d-flex bg-light p-4">
+                  <h3>$49/Mo</h3>
+                  <h5 class="mx-3">BASIC PLAN</h5>
+                </div>
+                
+                <div class="box-price-body p-4">
+                  <p><i class="fa fa-check"></i>&#160; full body massage</p>
+                  <p><i class="fa fa-check"></i>&#160; full body massage</p>
+                  <p><i class="fa fa-check"></i>&#160; full body massage</p>
+                  <p><i class="fa fa-check"></i>&#160; full body massage</p>
+                  <p><i class="fa fa-check"></i>&#160; full body massage</p>
+                  <button>Order Now</button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
   <!--  -->
-  <div class=" mt-5 w-100 h-auto"></div>
+  <div class="card-people container w-100 h-auto" style="margin-top: 10%;">
+    <center>
+      <h4>SPA SPECIALIST</h4>
+      <h1>Spa & Beauty Specialist</h1>
+    </center>
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-12 mt-5">
+        <div class="box-people">
+          <img src="https://themewagon.github.io/sparlex/img/team-1.png" alt="">
+          <div class="box-people-footer">
+            <center>
+              <h5>Oliver Mia</h5>
+              <p>Spa & Beauty Expert</p>
+            </center>
+          </div>
+          <div class="overlay-hover">
+            <button><i class="fa-brands fa-twitter"></i></button>
+            <button><i class="fa-brands fa-facebook-f"></i></button>
+            <button><i class="fa-brands fa-linkedin-in"></i></button>
+            <button><i class="fa-brands fa-instagram"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 mt-5">
+        <div class="box-people">
+          <img src="https://themewagon.github.io/sparlex/img/team-2.png" alt="">
+          <div class="box-people-footer">
+            <center>
+              <h5>Charlotte Rose</h5>
+              <p>Spa & Beauty Expert</p>
+            </center>
+          </div>
+          <div class="overlay-hover">
+            <button><i class="fa-brands fa-twitter"></i></button>
+            <button><i class="fa-brands fa-facebook-f"></i></button>
+            <button><i class="fa-brands fa-linkedin-in"></i></button>
+            <button><i class="fa-brands fa-instagram"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 mt-5">
+        <div class="box-people">
+          <img src="https://themewagon.github.io/sparlex/img/team-3.png" alt="">
+          <div class="box-people-footer">
+            <center>
+              <h5>Amellia Luna</h5>
+              <p>Spa & Beauty Expert</p>
+            </center>
+          </div>
+          <div class="overlay-hover">
+            <button><i class="fa-brands fa-twitter"></i></button>
+            <button><i class="fa-brands fa-facebook-f"></i></button>
+            <button><i class="fa-brands fa-linkedin-in"></i></button>
+            <button><i class="fa-brands fa-instagram"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 mt-5">
+        <div class="box-people">
+          <img src="https://themewagon.github.io/sparlex/img/team-4.png" alt="">
+          <div class="box-people-footer">
+            <center>
+              <h5>Isabella Evelyn</h5>
+              <p>Spa & Beauty Expert</p>
+            </center>
+          </div>
+          <div class="overlay-hover">
+            <button><i class="fa-brands fa-twitter"></i></button>
+            <button><i class="fa-brands fa-facebook-f"></i></button>
+            <button><i class="fa-brands fa-linkedin-in"></i></button>
+            <button><i class="fa-brands fa-instagram"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--  -->
+  <div class="testimonial w-100 h-auto" style="background-image: url(https://vietnamteachingjobs.com/wp-content/uploads/2022/11/Beautiful-Saigon-Spa.jpg);margin-top: 10%;">
+    <center>
+      <h5>TESTIMONIAL</h5>
+      <h1>What Our Clients Say!</h1>
+    </center>
+    <div id="carouselExampleRun" class="carousel slide" data-bs-ride="carousel">
+      <div class="run-btn d-flex justify-content-end">
+        <button type="button" data-bs-target="#carouselExampleRun" data-bs-slide="prev"><i class="fa-solid fa-arrow-left"></i></button>
+        <button type="button" data-bs-target="#carouselExampleRun" data-bs-slide="next"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+      <div class="carousel-inner container">
+        <div class="carousel-item active" data-bs-interval="4000">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 mt-3">
+              <div class="box-client p-3 d-flex">
+                <div class="client w-25 mt-4 h-auto">
+                  <img src="" alt="">
+                  <center>
+                    <h5>Shoko Takahasi</h5>
+                    <p>Profession</p>
+                  </center>
+                </div>
+                <div class="comment mt-4 w-75 mx-4">
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star text-dark"></i>
+                    </div>
+                    <div class="text-end"><i class="fa-solid fa-quote-right"></i></div>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis delectus mollitia quo repellat reiciendis unde maxime. Ex sint eaque tenetur consequatur possimus fuga iste consequuntur?</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 mt-3">
+              <div class="box-client p-3 d-flex">
+                <div class="client w-25 mt-4 h-auto">
+                  <img src="" alt="">
+                  <center>
+                    <h5>Shoko Takahasi</h5>
+                    <p>Profession</p>
+                  </center>
+                </div>
+                <div class="comment mt-4 w-75 mx-4">
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star text-dark"></i>
+                    </div>
+                    <div class="text-end"><i class="fa-solid fa-quote-right"></i></div>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis delectus mollitia quo repellat reiciendis unde maxime. Ex sint eaque tenetur consequatur possimus fuga iste consequuntur?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 mt-3">
+              <div class="box-client p-3 d-flex">
+                <div class="client w-25 mt-4 h-auto">
+                  <img src="" alt="">
+                  <center>
+                    <h5>Shoko Takahasi</h5>
+                    <p>Profession</p>
+                  </center>
+                </div>
+                <div class="comment mt-4 w-75 mx-4">
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star text-dark"></i>
+                    </div>
+                    <div class="text-end"><i class="fa-solid fa-quote-right"></i></div>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis delectus mollitia quo repellat reiciendis unde maxime. Ex sint eaque tenetur consequatur possimus fuga iste consequuntur?</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 mt-3">
+              <div class="box-client p-3 d-flex">
+                <div class="client w-25 mt-4 h-auto">
+                  <img src="" alt="">
+                  <center>
+                    <h5>Shoko Takahasi</h5>
+                    <p>Profession</p>
+                  </center>
+                </div>
+                <div class="comment mt-4 w-75 mx-4">
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star text-dark"></i>
+                    </div>
+                    <div class="text-end"><i class="fa-solid fa-quote-right"></i></div>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis delectus mollitia quo repellat reiciendis unde maxime. Ex sint eaque tenetur consequatur possimus fuga iste consequuntur?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 mt-3">
+              <div class="box-client p-3 d-flex">
+                <div class="client w-25 mt-4 h-auto">
+                  <img src="" alt="">
+                  <center>
+                    <h5>Shoko Takahasi</h5>
+                    <p>Profession</p>
+                  </center>
+                </div>
+                <div class="comment mt-4 w-75 mx-4">
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star text-dark"></i>
+                    </div>
+                    <div class="text-end"><i class="fa-solid fa-quote-right"></i></div>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis delectus mollitia quo repellat reiciendis unde maxime. Ex sint eaque tenetur consequatur possimus fuga iste consequuntur?</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 mt-3">
+              <div class="box-client p-3 d-flex">
+                <div class="client w-25 mt-4 h-auto">
+                  <img src="" alt="">
+                  <center>
+                    <h5>Shoko Takahasi</h5>
+                    <p>Profession</p>
+                  </center>
+                </div>
+                <div class="comment mt-4 w-75 mx-4">
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star text-dark"></i>
+                    </div>
+                    <div class="text-end"><i class="fa-solid fa-quote-right"></i></div>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis delectus mollitia quo repellat reiciendis unde maxime. Ex sint eaque tenetur consequatur possimus fuga iste consequuntur?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+       
+    </div>
+  </div>
+
+  <!--  -->
+  <div class="contact container" style="margin-top: 8%;">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+        <div class="box-contact d-flex p-4">
+          <i class="fa-solid fa-location-dot"></i>
+          <div class="mx-3">
+            <h5>Address</h5>
+            <p>KM6, RusseyKeo, Phnom Penh</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+        <div class="box-contact d-flex p-4">
+          <i class="fa-solid fa-envelope"></i>
+          <div class="mx-3">
+            <h5>Email</h5>
+            <p>ponleuproem6889@gmail.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+        <div class="box-contact d-flex p-4">
+          <i class="fa-solid fa-phone"></i>
+          <div class="mx-3">
+            <h5>Telephone</h5>
+            <p>(+855)97 543 8840</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class=" w-100 container mt-5">
+    <div class="map">
+      <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2020.317102711309!2d104.91340634214743!3d11.616708037678938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2skh!4v1722609126469!5m2!1sen!2skh" style="border:1px solid black;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="map-footer">
+      <center>
+        <h5>Follow Us</h5>
+        <div class="grp-btn d-flex justify-content-center">
+          <button><i class="fa-brands fa-facebook-f"></i></button>
+          <button><i class="fa-brands fa-twitter"></i></button>
+          <button><i class="fa-brands fa-instagram"></i></button>
+          <button><i class="fa-brands fa-linkedin-in"></i></button>
+        </div>
+      </center>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+   <div class="footer w-100 h-auto bg-dark" style="margin-top: 10%;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-12 mt-4">
+            <h5>Newsletter</h5>
+            <p>Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in tempor dui, non consectetur enim.</p>
+            <div class="grp-sign">
+              <input type="email" placeholder="Enter Your Email">
+              <button type="submit">SignUp</button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mt-4">
+            <h5>Our Services</h5>
+
+            <ul>
+              <li>
+                <a href="#"><i class="fa-solid fa-angle-right"></i> Facials</a>
+                <a href="#"><i class="fa-solid fa-angle-right"></i> Waxing</a>
+                <a href="#"><i class="fa-solid fa-angle-right"></i> Massage</a>
+                <a href="#"><i class="fa-solid fa-angle-right"></i> Mineral Baths</a>
+                <a href="#"><i class="fa-solid fa-angle-right"></i> Body Treatments</a>
+                <a href="#"><i class="fa-solid fa-angle-right"></i> Aroma Therapy</a>
+                <a href="#"><i class="fa-solid fa-angle-right"></i> Stone Spa</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mt-4">
+            <h5>Schedule</h5>
+            <p>Monday: 09:00am - 10:00pm</p>
+            <p>Saturdy: 09:00am - 08:00pm</p>
+            <p>Sunday: 09:00am - 05:00pm</p>
+            <h5>Address</h5>
+            <p><i class="fa-solid fa-location-dot" style="color: darkviolet;"></i> KM6, RusseyKeo, Phnom Penh</p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mt-4">
+            <h5>Follow Us</h5>
+            <ul>
+              <li>
+                <a href="#"><i class="fa-solid fa-angle-right"></i> Facebook</a>
+                <a href="#"><i class="fa-solid fa-angle-right"></i> Instagram</a>
+                <a href="#"><i class="fa-solid fa-angle-right"></i> Twitter</a>
+              </li>
+            </ul>
+            <h5>Contact Us</h5>
+            <p><i class="fa-solid fa-envelope" style="color: darkviolet;"></i>  ponleuproem6889@gmail.com</p>
+            <p><i class="fa-solid fa-phone" style="color: darkviolet;"></i>  (+855)97 543 8840</p>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-lg-4 col-sm-12 text-center">
+            <p><i class="fa-solid fa-copyright text-light"></i> <strong style="color: deeppink;">Sparlex</strong> , All right reserved</p>
+          </div>
+          <div class="col-lg-4 col-sm-12 text-center">
+            <div class="grp-btn">
+              <button><i class="fa-brands fa-facebook-f"></i></button>
+          <button><i class="fa-brands fa-twitter"></i></button>
+          <button><i class="fa-brands fa-instagram"></i></button>
+          <button><i class="fa-brands fa-linkedin-in"></i></button>
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-12 text-center">
+          <p>Desighed By <strong style="color: deeppink;">Mr.Light</strong> Distributed By ThemeWagon</p>
+        </div>
+      </div>
+   </div>
+
+<a href="#"><button class="btn-click"><i class="fa-solid fa-arrow-up"></i></button></a>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script>
+  // 
   document.addEventListener("DOMContentLoaded", () =>{
     const counter = document.querySelectorAll('.counter');
     const speed = 100; //the lower the slower
@@ -894,5 +1427,7 @@
       handleScroll(); //initial check
     });
   });
+
+  
 </script>
 </html>

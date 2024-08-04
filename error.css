@@ -1,0 +1,268 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  height: auto;
+}
+.top-header{
+  background-color: blueviolet;
+}
+.top-header a{
+  text-decoration: none;
+}
+.top-header p{
+  color: white;
+}
+.top-header p i{
+  color:fuchsia;
+}
+.top-header .grp-icon{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.top-header .grp-icon i{
+  color: fuchsia;
+}
+.top-header .grp-icon i:hover{
+  opacity: .5;
+}
+
+/*  */
+.main-header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fff;
+  transition: top 0.3s;
+  background-color: whitesmoke;
+}
+.main-header .navbar-brand h1{
+  font-size: 3rem;
+  color: deeppink;
+  font-weight: 700;
+}
+.main-header .collapse ul a{
+  font-size: 20px;
+  color: blueviolet;
+  font-weight: 650;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+.main-header .collapse ul a:focus,
+.main-header .collapse ul a:hover{
+  color: fuchsia;
+}
+.main-header .collapse ul a:focus:after,
+.main-header .collapse ul a:hover:after{
+  width: 100%;
+  left: 0%;
+}
+.main-header .collapse ul a::after{
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: red;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+.main-header .collapse ul li .hover-drop{
+  list-style: none;
+  overflow: hidden;
+  width: 200px;
+  
+}
+.main-header .collapse ul li .hover-drop li{
+  position: relative;
+}
+.main-header .collapse ul li .hover-drop li a{
+  display: block;
+  color: blueviolet;
+  text-decoration: none;
+  margin-top: 10px;
+  font-size: 17px;
+}
+.main-header .collapse ul li .hover-drop li a:hover{
+  color: fuchsia;
+}
+.main-header .collapse ul li .hover-drop{
+  display: none;
+  position: absolute;
+  background-color: white;
+  border-radius: 15px;
+  z-index: 1;
+  height: 190px;
+}
+.main-header .collapse ul li .hover-drop li{
+  float: none;
+}
+.main-header .collapse ul li:hover .hover-drop{
+  display: block;
+}
+
+
+.main-header .right-head .search-btn{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: fuchsia;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-right: 7px;
+  cursor: pointer;
+}
+.main-header .right-head .search-btn:hover{
+  background-color: darkviolet;
+}
+.main-header .right-head button{
+  border-radius: 20px;
+  width: 170px;
+  border: none;
+  background-color: fuchsia;
+  color: white;
+}
+.main-header .right-head button:hover{
+  background-color: darkviolet;
+}
+.start h1{
+  color: deeppink;
+  font-size: 1.75rem;
+  margin-top: 25px;
+}
+.start p{
+  color: white;
+  font-size: 1.25rem;
+}
+.start p a{
+  color: aqua;
+  text-decoration: none;
+}
+.mid i{
+  font-size: 4rem;
+  color: darkviolet;
+}
+.mid h1{
+  font-size: 5rem;
+  color: black;
+
+}
+.mid h5{
+  font-size: 3rem;
+}
+.mid p{
+  font-size: 1.5rem;
+}
+.mid button{
+  width: 180px;
+  height: 50px;
+  background-color: deeppink;
+  border: none;
+  color: white;
+  border-radius: 20px;
+}
+
+.mid button:hover{
+  background-color: darkviolet;
+}
+
+.footer{
+  color: white;
+}
+.footer .grp-sign input{
+  background-color: white;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border: none;
+  padding: 8px;
+  border-radius: 15px;
+}
+.footer .grp-sign input::placeholder{
+  color: black;
+}
+.footer .grp-sign button{
+  position: absolute;
+  
+  width: 100px;
+  height: 50px;
+  border: none;
+  border-radius: 15px;
+  background-color: deeppink;
+  color: white;
+  left: 405px;
+}
+.footer .grp-sign button:hover{
+  background-color: darkviolet;
+}
+.footer h5{
+  font-size: 1.75rem;
+  margin-bottom: 30px;
+}
+.footer p{
+  font-size: 18px;
+  margin-top: 10px;
+}
+.footer ul li{
+  list-style: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-left: -20px;
+  row-gap: 20px;
+}
+.footer ul li a{
+  text-decoration: none;
+  color: white;
+}
+.footer ul li a:hover{
+  color: deeppink;
+  transform: translateX(10px);
+}
+
+.footer .grp-btn button{
+  margin: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background-color: white;
+  color: deeppink;
+}
+.grp-btn button:hover{
+  background-color: darkviolet;
+}
+
+.btn-click{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: deeppink;
+  color: white;
+  right: 0;
+  bottom: 5px;
+  border: none;
+
+}
+.btn-click:hover{
+  background-color: darkviolet;
+}
+ 
